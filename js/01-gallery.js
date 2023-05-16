@@ -27,13 +27,12 @@ function onClick(event) {
     return;
   }
   const imgDataSource = event.target.dataset.source;
-
   const currentImg = event.target;
 
   const instance = basicLightbox.create(`
   <div class="modal">
             <img
-            class='gallery__image'
+            class='modal__image'
             src= ${imgDataSource}
             
             alt='${currentImg.description}'
@@ -42,4 +41,7 @@ function onClick(event) {
      `);
 
   instance.show();
+
+  const modalImg = document.querySelector('.modal__image');
+  modalImg.addEventListener('click', () => instance.close());
 }
