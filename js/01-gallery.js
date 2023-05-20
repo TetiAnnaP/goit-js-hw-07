@@ -42,6 +42,19 @@ function onClick(event) {
 
   instance.show();
 
-  const modalImg = document.querySelector('.modal__image');
-  modalImg.addEventListener('click', () => instance.close());
+  // const modalWindow = document.querySelector(
+  //   '.basicLightbox .basicLightbox--visible'
+  // );
+
+  // modalWindow.addEventListener('keydown', (e) => {
+
+  // if ((e.code = 'Escape')) {
+  //   console.log('Closing window...');
+  // }
+  // });
 }
+
+// const modalImg = document.querySelector('.modal__image');
+// modalImg.addEventListener('click', () => instance.close());
+
+console.log(HTMLImageElement.prototype);
